@@ -11,7 +11,7 @@ install_requires = \
 
 setup_kwargs = {
     'name': 'combine_csv',
-    'version': '0.0.7',
+    'version': '0.0.8',
     'description': 'A program to combine csv',
     'py_modules': ['combine_csv'],
     'entry_points':{

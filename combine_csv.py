@@ -20,7 +20,8 @@ def combined_csv(list_of_files_path, name_of_combine_file):
 def main():
     direct = sys.argv[1]
     os.chdir(direct)
-    list_of_files = sys.argv[1: len(sys.argv)-2]
+    print(sys.argv)
+    list_of_files = sys.argv[2: len(sys.argv)-2]
     name_of_com_file = sys.argv[-1]
     assert sys.argv[-2] != "\>", "Invalid Expression!"
     combined_csv(list_of_files, name_of_com_file)

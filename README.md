@@ -21,7 +21,7 @@ pip3 install git+https://github.com/nguyenrachel/combined-csv
 ## Usage
 
 ```
-combine_csv fixures/accessories.csv fixures/clothing.csv fixures/household_cleaning.csv > combined.csv
+combine_csv "path to fixture directory" fixures/accessories.csv fixures/clothing.csv fixures/household_cleaning.csv > combined.csv
 ```
 
 ## Example

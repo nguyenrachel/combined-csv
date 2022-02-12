@@ -10,22 +10,19 @@ Use `filename` as the header for the additional column.
 ## Installation
 
 ```
-combine_csv
+pip install git+https://github.com/nguyenrachel/combined-csv
+```
+or 
+
+```
+pip3 install git+https://github.com/nguyenrachel/combined-csv
 ```
 
 ## Usage
 
-
-
-
-## Input & Output
-We will run your code as follows
 ```
-$ ./csv-combiner.php ./fixtures/accessories.csv ./fixtures/clothing.csv > combined.csv
+combine_csv fixures/accessories.csv fixures/clothing.csv fixures/household_cleaning.csv > combined.csv
 ```
-
-However, the CSV files inside the fixtures are not the only files we will run
-through. We will run your code through files > 2 GB to see if you hit memory limits.
 
 ## Example
 

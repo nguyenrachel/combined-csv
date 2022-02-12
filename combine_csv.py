@@ -16,11 +16,14 @@ def combined_csv(list_of_files_path, name_of_combine_file):
     initial_df['category'] = initial_df.category.apply(lambda x: x.replace('"', ''))
     initial_df.to_csv(name_of_combine_file)
 
-if __name__ == "__main__":
+def main():
     list_of_files = sys.argv[:len(sys.argv)-2]
     assert [os.path.exists(i) for i in list_of_files], "Invalid Files"
     name_of_com_file = sys.argv[-1]
     assert sys.argv[-2] != "\>", "Invalid Expression!"
     combined_csv(list_of_files, name_of_com_file)
+
+if __name__ == "__main__":
+    main()
         
     

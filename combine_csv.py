@@ -2,6 +2,9 @@ import pandas as pd
 import os 
 import sys
 
+DIR = os.path.abspath(os.path.dirname(__file__))
+
+print(DIR)
 
 def combined_csv(list_of_files_path, name_of_combine_file):
     initial_csv = list_of_files_path[0]
